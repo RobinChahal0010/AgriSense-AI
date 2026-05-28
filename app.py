@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
-# ---------------------------
+
 # Load trained crop model
 # ---------------------------
 crop_model_path = os.path.join("models", "crop_model.pkl")
