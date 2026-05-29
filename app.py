@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 app = Flask(__name__)
 
 
-# ---------------------------
+
 crop_model_path = os.path.join("models", "crop_model.pkl")
 crop_model = joblib.load(crop_model_path)
 
