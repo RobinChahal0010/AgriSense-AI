@@ -20,7 +20,6 @@ crop_model = joblib.load(crop_model_path)
 MANDI_DATA_PATH = "data/mandi_data.csv"
 
 
-# ---------------------------
 @app.route('/')
 def home():
     return render_template("index.html")
