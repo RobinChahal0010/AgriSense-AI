@@ -40,7 +40,6 @@ def predict():
                                   columns=['N','P','K','temperature','humidity','ph','rainfall'])
         crop_prediction = crop_model.predict(input_data)[0]
 
-        # Mandi price prediction input
         state = request.form['state']
         district = request.form['district']
         market = request.form['market']
