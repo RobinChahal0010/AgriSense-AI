@@ -45,7 +45,7 @@ def predict():
         market = request.form['market']
         crop = crop_prediction
 
-        # Load dataset
+       
         df = pd.read_csv(MANDI_DATA_PATH)
         df['Arrival_Date'] = pd.to_datetime(df['Arrival_Date'], dayfirst=True)
         df = df.sort_values('Arrival_Date')
