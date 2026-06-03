@@ -27,7 +27,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        # Crop recommendation input
+        
         N = float(request.form['N'])
         P = float(request.form['P'])
         K = float(request.form['K'])
