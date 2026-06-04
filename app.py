@@ -72,7 +72,6 @@ def predict():
         else:
             crop_df = crop_df.rename(columns={'Arrival_Date':'ds','Modal_x0020_Price':'y'}).reset_index(drop=True)
 
-        # ---------------------------
         # Train Prophet model
         # ---------------------------
         model = Prophet()
