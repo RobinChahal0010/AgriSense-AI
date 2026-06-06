@@ -51,7 +51,6 @@ def predict():
         df = df.sort_values('Arrival_Date')
 
       
-        # ---------------------------
         crop_df = df[(df['Commodity']==crop) & 
                      (df['State']==state) & 
                      (df['District']==district) & 
