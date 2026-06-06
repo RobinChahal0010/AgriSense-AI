@@ -50,7 +50,7 @@ def predict():
         df['Arrival_Date'] = pd.to_datetime(df['Arrival_Date'], dayfirst=True)
         df = df.sort_values('Arrival_Date')
 
-        # Fallback logic for insufficient data
+      
         # ---------------------------
         crop_df = df[(df['Commodity']==crop) & 
                      (df['State']==state) & 
