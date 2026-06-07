@@ -63,7 +63,7 @@ def predict():
         if len(crop_df) < 2:
             
             today = pd.to_datetime('today')
-            last_price = 5000  # default reasonable price
+            last_price = 5000  
             crop_df = pd.DataFrame({
                 'ds': [today - pd.DateOffset(months=i) for i in range(12,0,-1)],
                 'y': [last_price + i*50 for i in range(12)]
