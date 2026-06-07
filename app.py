@@ -61,7 +61,7 @@ def predict():
         if len(crop_df) < 2:
             crop_df = df[df['Commodity']==crop][['Arrival_Date','Modal_x0020_Price']]
         if len(crop_df) < 2:
-            # Fallback: generate smooth dummy trend
+            
             today = pd.to_datetime('today')
             last_price = 5000  # default reasonable price
             crop_df = pd.DataFrame({
