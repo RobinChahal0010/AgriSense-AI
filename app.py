@@ -75,7 +75,7 @@ def predict():
         model = Prophet()
         model.fit(crop_df)
 
-        # Predict next 6 months
+        #
         future = model.make_future_dataframe(periods=6, freq='MS')
         forecast = model.predict(future)
         future_forecast = forecast.tail(6)[['ds','yhat']]
